@@ -1,0 +1,292 @@
+@import url(https://fonts.google.com/specimen/Inter);
+* {
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+html {
+    margin: 0;
+    padding: 3.75rem 8.75rem;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.navbar .mobMenu {
+    display: none;
+}
+.menu  a {
+    text-decoration: none;
+    color:  hsl(236, 13%, 42%);
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+.menu  a:hover {
+    color: hsl(35, 77%, 62%)
+}
+.hero {
+    display: flex;
+}
+.hero .left {
+    width: 70%;
+    margin-right: 20px;
+}
+.hero .right {
+    width: 29%;
+    background-color: hsl(240, 100%, 5%);
+    padding: 0 10px;
+    height: 100%;
+}
+.left .img {
+    height: 300px;
+    width: 100%;
+}
+.left .img-bottom {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+}
+.img-bottom .title {
+    width: 50%;
+    font-size: 55px;
+    margin: 0 80px 0 0;
+    color: hsl(240, 100%, 5%);
+}
+.img-bottom .descri {
+    line-height: 30px;
+    width: 50%;
+}
+.descri p {
+    margin: 0;
+    color:  hsl(236, 13%, 42%);
+}
+.descri .btn {
+    color: hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
+    padding: 10px 35px;
+    font-weight: 800;
+    margin: 20px 0 0;
+    cursor: pointer;
+}
+.descri .btn:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+.right .title {
+    color: hsl(35, 77%, 62%);
+    font-weight: 800;
+}
+.right h3 {
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
+.right h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+.right p {
+    color: hsl(233, 8%, 79%);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+main .end {
+    display: flex;
+    margin: 30px 0 0 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.end .one, .two, .three {
+    display: flex;
+    width: 33%;
+}
+.img-end img {
+    width: 125px;
+    height: 75%;
+ }
+ .descri-end {
+    width: 100%;
+    margin-left: 10px;
+ }
+ .descri-end  h1 {
+    color: hsl(5, 85%, 63%);
+    font-weight: 800;
+    margin: 0;
+}
+.descri-end  h3 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    margin: 0;
+    cursor: pointer;
+}
+.descri-end  h3:hover {
+    color: hsl(5, 85%, 63%);
+}
+.descri-end p {
+    color: hsl(236, 13%, 42%);
+}
+
+@media (max-width:600px) {
+    html {
+        margin: 0;
+        padding: 5px;
+     }
+     .hero {
+         flex-direction: column;
+     }
+     .hero .left {
+        width: 100%;
+     }
+     .hero .right {
+         width: 100%;
+         padding: 0 10px;
+         height: 100%;
+         margin: 0 0 20px 0;
+     }
+     .left .img {
+        margin: 0;
+         height: 300px;
+         width: 100%;
+     }
+     .img-bottom {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         flex-direction: column;
+     }
+     .img-bottom .title {
+         width: 100%;
+         font-size: 36px;
+         line-height: 40px;
+     }
+     .img-bottom .descri {
+         width: 100%;
+     }
+     .descri p {
+         margin: 0;
+     }
+    .descri .btn {
+         margin: 15px 0 15px;
+     }
+    .right .title, h3 {
+        margin: 0;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .right p {
+        padding: 0 0 15px 0;
+     }
+     main .end {
+        flex-direction: column;
+        padding: 0;
+        margin: 20px 0;
+    }
+    .end .one, .two, .three {
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .img-end img {
+        width: 125px;
+        height: 100px;
+     }
+    .end h1, .end h3, .end p {
+        font-size: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+/*taille air pad */
+@media screen and (min-width:600px) and (max-width:1096px) {
+    html {
+        margin: 0;
+        padding: 5px;
+     }
+     .left .img-bottom {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+    }
+    .img-bottom .title {
+        width: 50%;
+        font-size: 43px;
+        margin: 0 10px 0 0;
+    }
+    .img-bottom .descri {
+        line-height: 23px;
+        width: 50%;
+    }
+    .right .title, h3 {
+        font-size: 15px;
+    }
+    .right p {
+        padding: 0 0 15px;
+    }
+    .img-end img {
+        width: 150px;
+        height: 190px;
+     }
+     .end h1, .end h3, .end p {
+        font-size: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+}
+/*taille phone*/
+@media screen and (min-width:280px) and (max-width:430px) {
+    .end .one, .two, .three {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-end img {
+        width: 100%;
+        height: 220px;
+     }
+     .end h1, .end h3, .end p {
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+    }
+
+
+@media (max-width:599px) {
+    .navbar .menu {
+        display: none;
+    }
+    .navbar .mobMenu {
+        display: block;
+    }
+    .mobMenu {
+        display: block;
+        padding: 5px;
+    }
+    .menu {
+        height: 100%;
+        width: 60%;
+        position: absolute;
+        right: 5px;
+        padding: 15px;
+        top: 75px;
+        background-color: white;
+        display: none;
+        transition: all 0.25s;
+    }
+    .menu a {
+        padding: 8px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        color: hsl(240, 100%, 5%);
+
+    }
+
+}
