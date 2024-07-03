@@ -1,13 +1,20 @@
-@import url(https://fonts.google.com/specimen/Inter);
 * {
     box-sizing: border-box;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     overflow-x: hidden;
 }
 html {
     margin: 0;
-    padding: 3.75rem 8.75rem;
+    padding: 3.5rem 7.75rem;
+}
+img {
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 p {
     font-weight: 400;
@@ -35,11 +42,11 @@ p {
     display: flex;
 }
 .hero .left {
-    width: 70%;
+    width: 67%;
     margin-right: 20px;
 }
 .hero .right {
-    width: 29%;
+    width: 31%;
     background-color: hsl(240, 100%, 5%);
     padding: 0 10px;
     height: 100%;
@@ -193,18 +200,53 @@ main .end {
         margin-bottom: 15px;
     }
     .img-end img {
-        width: 125px;
-        height: 100px;
+        width: 130px;
+        height: 120px;
      }
     .end h1, .end h3, .end p {
-        font-size: 15px;
+        display: flex;
+        flex-direction: colum;
         margin: 0;
         padding: 5px;
     }
+
+    .navbar .menu {
+        display: none;
+    }
+    .navbar .mobMenu {
+        display: flex;
+    }
+    .navbar .mobMenu .active {
+        display: block;
+        padding: 5px;
+    }
+    .navbar .mobMenu .disabled {
+        display: none;
+    }
+    .menu {
+        height: 100%;
+        width: 60%;
+        position: absolute;
+        right: 5px;
+        padding: 15px;
+        top: 75px;
+        background-color: white;
+        display: none;
+        transition: all 0.25s;
+    }
+    .menu a {
+        padding: 8px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        color: hsl(240, 100%, 5%);
+
+    }
+
 }
 
 /*taille air pad */
-@media screen and (min-width:600px) and (max-width:1096px) {
+@media screen and (min-width:601px) and (max-width:1096px) {
     html {
         margin: 0;
         padding: 5px;
@@ -240,7 +282,8 @@ main .end {
         padding: 5px;
     }
 }
-/*taille phone*/
+/*
+//taille phone
 @media screen and (min-width:280px) and (max-width:430px) {
     .end .one, .two, .three {
         flex-direction: column;
@@ -256,37 +299,4 @@ main .end {
         padding: 5px;
     }
     }
-
-
-@media (max-width:599px) {
-    .navbar .menu {
-        display: none;
-    }
-    .navbar .mobMenu {
-        display: block;
-    }
-    .mobMenu {
-        display: block;
-        padding: 5px;
-    }
-    .menu {
-        height: 100%;
-        width: 60%;
-        position: absolute;
-        right: 5px;
-        padding: 15px;
-        top: 75px;
-        background-color: white;
-        display: none;
-        transition: all 0.25s;
-    }
-    .menu a {
-        padding: 8px;
-        font-weight: 400;
-        display: flex;
-        flex-direction: column;
-        color: hsl(240, 100%, 5%);
-
-    }
-
-}
+*/
